@@ -17,7 +17,6 @@ module.exports = {
   execute(message) {
     let commands = message.client.commands.array();
 
-    },
     run: async (bot, message, args) => {
         let user = message.author;
 
