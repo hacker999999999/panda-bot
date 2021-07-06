@@ -1,5 +1,10 @@
-const { MessageEmbed } = require("discord.js");
-const db = require("quick.db");
+const { Client, Collection, MessageEmbed } = require(`discord.js`);
+const { 
+  PREFIX, 
+} = require(`../config.json`);
+
+
+
 
 module.exports = {
     config: {
