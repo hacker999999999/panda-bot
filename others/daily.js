@@ -1,7 +1,6 @@
 const { Client, Collection, MessageEmbed } = require(`discord.js`);
-const { 
-  PREFIX, 
-} = require(`../config.json`);
+const db = require("quick.db");
+const ms = require("parse-ms");
 
 
 module.exports = {
