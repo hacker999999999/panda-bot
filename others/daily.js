@@ -1,11 +1,12 @@
-const { MessageEmbed } = require("discord.js");
-const db = require("quick.db");
-const ms = require("parse-ms");
+const { Client, Collection, MessageEmbed } = require(`discord.js`);
 const {
   PREFIX,
   approveemoji,
   denyemoji
 } = require(`../config.json`);
+
+const db = require('quick.db');
+
 
 
 module.exports = {
