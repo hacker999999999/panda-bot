@@ -10,13 +10,13 @@ const db = require('quick.db');
 
 
 module.exports = {
-    config: {
-        name: "daily",
-        aliases: ["day"],
-        category: "economy",
-        description: "Gives You 200 per day",
-        usage: " ",
-        accessableby: "everyone"
+  name: "daily",
+  aliases: ["day"],
+  cooldown: 8,
+  description: "**all commands**",
+  execute(message) {
+    let commands = message.client.commands.array();
+
     },
     run: async (bot, message, args) => {
         let user = message.author;
