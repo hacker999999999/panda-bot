@@ -16,10 +16,9 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
     .setThumbnail(`https://images-ext-1.discordapp.net/external/ywW90Qq3ButrY58SXGKsfdaHJ5Fl3fAX-jCt66kxq2k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/323c09ffbcd4777d8b5d14ac80df56a5.png `)
-    .setTitle(`**Panda Help**`)
+    .setTitle(`**Panda Bot ✨**`)
     .setDescription(`
 <a:emoji_7:859099940499750912> **|** **User Commands**
-
 > \`invite\` - \`support\` - \`about\`
 > \`ping\` - \`prefix\` - \`uptime\`
 > \`tinvites\` - \`sug\` - \`roleuser\`
@@ -28,37 +27,34 @@ module.exports = {
 
 
 <a:music:852559405718175744> **|** **Music Commands**
-
-> \`play\` - \`skip\` - \`skipto\`
-> \`stop\` - \`volume\` - \`nowplaying\`
-> \`shuffle\` - \`search\` - \`resume\`
-> \`remove\` - \`queue\` - \`loop\`
-> \`lyrics\` - \`radio\`
+> \`play\` . \`skip\` . \`skipto\`
+> \`stop\` . \`volume\` . \`nowplaying\`
+> \`shuffle\` . \`search\` . \`resume\`
+> \`remove\` . \`queue\` . \`loop\`
+> \`lyrics\` . \`radio\`
 
 
 
 <a:Work:852558706708054056> **|** **Moderation Commands**
-
-> \`ban\` - \`unban\` - \`setnick\`
-> \`roleadd\` - \`roleremove\` - \`vkick\`
-> \`setprefix\` - \`clear\` - \`close\`
-> \`open\` - \`senddm\`
+> \`ban\` . \`unban\` . \`setnick\`
+> \`roleadd\` . \`roleremove\` . \`vkick\`
+> \`setprefix\` . \`clear\` . \`close\`
+> \`open\` . \`senddm\` . \`createchannel\`
+> \`deletechannel\`
 
 
 
 
 <:emoji_61:863458308219731978> **|** **Gif Commands**
-
-> \`boy\` - \`girl\` - \`couple\`
-> \`sad\` - \`cartoon\` - \`anime\`
+> \`boy\` . \`girl\` . \`couple\`
+> \`sad\` . \`cartoon\` . \`anime\`
 > \`neon\`
 
 
 
 
 <a:emoji_20:856127714804105216> **|** **Game Commands**
-
-> \`kiss\` - \`slap\` - \`hug\`
+> \`kiss\` . \`slap\` . \`hug\`
 
 
 
