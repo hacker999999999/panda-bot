@@ -122,7 +122,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "sad")) {
+  if (message.content.startsWith(prefix + "sad")) {
     let sads = [
       "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
       "https://media.discordapp.net/attachments/786897045952790550/799435191323852820/luisa1-1.gif",
@@ -136,7 +136,6 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/786897045952790550/802722301984243712/a_66f26e072e89a58c1879c6fa27744bd7.gif",
       "https://media.discordapp.net/attachments/786897045952790550/801054305569865778/uzgun-4.gif",
       "https://media.discordapp.net/attachments/786897044483604490/806288916160315422/image0.gif"
-      "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",    
     ];
 
     message.channel
