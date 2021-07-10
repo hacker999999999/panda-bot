@@ -828,6 +828,19 @@ client.on("message", prof => {
   }
 });
 
+client.on('message',async message => {
+  if(message.content.startsWith(PREFIX + "server icon")) { 
+  let bla = new Discord.MessageEmbed()
+ 
+      bla.setDescription(`[Download](${message.guild.iconURL({ dynamic: true, size: 1024 })})`)
+      bla.setImage(message.guild.iconURL({ dynamic: true, size: 1024 }))
+      bla.setColor("RANDOM")
+ 
+      message.channel.send(bla)
+ 
+  }
+})
+
 client.on(`ready`, () => {	
 //////////////
 
