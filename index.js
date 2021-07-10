@@ -768,7 +768,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-if (message.content.startsWith(PREFIX + "create channel")) {
+if (message.content.startsWith(PREFIX + "createchannel")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
         let args = message.content.split(" ").slice(1);
     message.guild.channels.create(args.join(' '), 'text');
