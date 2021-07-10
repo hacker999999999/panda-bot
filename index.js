@@ -67,6 +67,31 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/786897045436366849/804682936615829504/image0.gif",
       "https://media.discordapp.net/attachments/786897045436366849/804314115601596426/ALANIS_WOMAN_GIF_176.gif",
       "https://media.discordapp.net/attachments/786897045436366849/804280612227383316/ALANIS_WOMAN_GIF_138.gif"
+      "https://media.discordapp.net/attachments/821688338305908756/824147075184197642/image0.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147075687645184/image1.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147124378796032/image0.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147124614201374/image1.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147125045559296/image2.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147125327626240/image3.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147125653864458/image4.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147125901590538/image5.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147126166487070/image6.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147126568615956/image7.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147148715196427/image2.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147149243023370/image3.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147151252357160/image6.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147151525118012/image7.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147151843360768/image8.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147152090562570/image9.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147158851649556/image1.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147159112744990/image2.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147159338713118/image3.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147159611473960/image4.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147160005083156/image5.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147160299601980/image6.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147160625971200/image7.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147161167298560/image8.gif",
+      "https://media.discordapp.net/attachments/821688338305908756/824147161422757908/image9.gif",
     ];
 
     message.channel
@@ -122,7 +147,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "sad")) {
+  if (message.content.startsWith(PREFIX + "sad")) {
     let sads = [
       "https://media.discordapp.net/attachments/786897045952790550/798719676795715614/Zeyrox_43.gif",
       "https://media.discordapp.net/attachments/786897045952790550/799435191323852820/luisa1-1.gif",
