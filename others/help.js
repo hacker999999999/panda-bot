@@ -18,12 +18,6 @@ module.exports = {
     .setThumbnail(`https://images-ext-1.discordapp.net/external/ywW90Qq3ButrY58SXGKsfdaHJ5Fl3fAX-jCt66kxq2k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/323c09ffbcd4777d8b5d14ac80df56a5.png `)
     .setTitle(`**Panda Help**`)
     .setDescription(`
-*** <a:emoji_23:852559927339253851>  **|** Prefix bot ***
-
-> ***__>__***
-
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-
 <a:emoji_7:859099940499750912> **|** **User Commands**
 
 > \`invite\` - \`support\` - \`about\`
@@ -31,7 +25,7 @@ module.exports = {
 > \`tinvites\` - \`sug\` - \`roleuser\`
 > \`report\`
 
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+
 
 <a:music:852559405718175744> **|** **Music Commands**
 
@@ -41,7 +35,7 @@ module.exports = {
 > \`remove\` - \`queue\` - \`loop\`
 > \`lyrics\` - \`radio\`
 
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+
 
 <a:Work:852558706708054056> **|** **Moderation Commands**
 
@@ -50,21 +44,24 @@ module.exports = {
 > \`setprefix\` - \`clear\` - \`close\`
 > \`open\` - \`senddm\`
 
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-<a:emoji_22:856127603345195019> **|** **Gif Commands**
+
+
+<:emoji_61:863458308219731978> **|** **Gif Commands**
 
 > \`boy\` - \`girl\` - \`couple\`
 > \`sad\` - \`cartoon\` - \`anime\`
 > \`neon\`
 
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+
+
 
 <a:emoji_20:856127714804105216> **|** **Game Commands**
 
 > \`kiss\` - \`slap\` - \`hug\`
 
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+
+
 
 <a:dslink:859104935194656779> **|** **Links**
 [Support](https://discord.gg/progresshome)
