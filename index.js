@@ -830,9 +830,9 @@ client.on("message", prof => {
 
 client.on('message',async message => {
   if(message.content.startsWith(PREFIX + "server icon")) { 
-  aliases: ["icon"],
   let bla = new Discord.MessageEmbed()
- 
+  aliases: ["h"],
+
       bla.setDescription(`[Download](${message.guild.iconURL({ dynamic: true, size: 1024 })})`)
       bla.setImage(message.guild.iconURL({ dynamic: true, size: 1024 }))
       bla.setColor("RANDOM")
