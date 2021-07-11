@@ -133,21 +133,21 @@ module.exports = {
 
     try {
       const newsong = new MessageEmbed()
-       .setTitle("🎶 "+song.title)
+       .setTitle("<:emoji_123:863458906470875166>"+song.title)
         .setURL(song.url)
         .setColor("RANDOM")
         .setImage(thumb)
         .setThumbnail(`https://images-ext-1.discordapp.net/external/ywW90Qq3ButrY58SXGKsfdaHJ5Fl3fAX-jCt66kxq2k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/323c09ffbcd4777d8b5d14ac80df56a5.png `)
          .addField("👤 Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
-        .addField("⏱ Length:", `\`${song.duration} Minutes\``, true)
-        .addField("🔊 Volume:", `\`100\``, true)
+        .addField("<a:time_clock:863850499991142410> Length:", `\`${song.duration} Minutes\``, true)
+        .addField("<:emoji_129:863458759237566465> Volume:", `\`100\``, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
       
-      await playingMessage.react("⏩"); //skip
-      await playingMessage.react("⏯️"); //pause
-      await playingMessage.react("🔁"); //loop
-      await playingMessage.react("⏹️"); //stop
+      await playingMessage.react("<:emoji_132:863458615171088414>"); //skip
+      await playingMessage.react("<:emoji_131:863458662660309012>"); //pause
+      await playingMessage.react("<:emoji_dark:863458548617052161>"); //loop
+      await playingMessage.react("<a:stop:863851880924577844>"); //stop
       await playingMessage.react("🕛"); //np
     } catch (error) {
       console.error(error);
@@ -204,7 +204,7 @@ module.exports = {
         
         break;
         //skip
-        case "⏩":
+        case "<:emoji_132:863458615171088414>":
           queue.playing = true;
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
@@ -216,7 +216,7 @@ module.exports = {
 
           break;
         //pause
-        case "⏯":
+        case "<:emoji_131:863458662660309012>":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           if (queue.playing) {
@@ -234,7 +234,7 @@ module.exports = {
           }
           break;
           //loop  
-        case "🔁":
+        case "<:emoji_dark:863458548617052161>":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.loop = !queue.loop;
@@ -243,7 +243,7 @@ module.exports = {
           queue.textChannel.send(loopembed).catch(console.error);
           break;
           //stop
-        case "⏹️":
+        case "<a:stop:863851880924577844>":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.songs = [];
