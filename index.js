@@ -790,6 +790,63 @@ client.on('message',async message => {
   }
 })
 
+const db = require('quick.db');
+client.on("message", (msg) => {
+    if (msg.content.startsWith(prefix + 'set-lang')) {
+        if (msg.author.bot) return;
+        if (msg.channel.type == "dm") return;
+        var args = msg.content.split(" ")
+        if (!args[1]) {
+            var lang = db.get(`${msg.guild.id}.lang`);
+            if (lang == null || undefined) db.set(`${msg.guild.id}`, { lang: "ar" });
+            if (lang === "en") return msg.reply('please type the lang');
+            if (lang === "ar") return msg.reply('اكتب الغة باليز');
+        } else if (args[1] === "en") {
+            db.set(`${msg.guild.id}`, {
+                lang: "en"
+            })
+            msg.channel.send('**✅ | Done Set Lang To English!.**')
+        } else if (args[1] === "ar") {
+            db.set(`${msg.guild.id}`, {
+                lang: "ar"
+            })
+            msg.channel.send('**.!تم تغير الغه للعربيه | ✅**')
+        } else if (args[1] !== "ar" || "en") {
+            var lang = db.get(`${msg.guild.id}.lang`)
+            if (lang == null || undefined) db.set(`${msg.guild.id}`, { lang: "ar" })
+            if (lang == "ar") {
+                msg.channel.send(
+                    `لا يمكن التعرف على الغه`
+                )
+            } else if (lang == "en") {
+                msg.channel.send(
+                    `This Lang Isn't Supported`
+                )
+            }
+        }
+    }
+});
+/*
+التركيب:
+ 
+// befor
+client.on("message", (msg) => {
+    if (msg.content.startsWith("test")) {
+         msg.reply('شغال');
+    }
+})
+// after
+client.on("message", (msg) => {
+    if (msg.content.startsWith("test")) {
+        var lang = db.get(`${msg.guild.id}.lang`);
+        if (lang == null || undefined) db.set(`${msg.guild.id}`, { lang: "ar" });
+        if (lang === "en") return msg.reply('working');
+        if (lang === "ar") return msg.reply('شغال');
+    }
+})
+/*
+
+
 client.on(`ready`, () => {	
 //////////////
 
