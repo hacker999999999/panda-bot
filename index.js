@@ -778,7 +778,7 @@ message.channel.send('Created  channel✅')
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "serverinfo")) {
+  if (message.content.startsWith(PREFIX + "server info")) {
     if (cooldown.has(message.author.id)) {
       return message.channel.send(`You have to wait 5 seconds`).then(m => {
         m.delete({ timeout: cdtime * 600 });
@@ -803,7 +803,7 @@ client.on("message", message => {
 });
 
 client.on("message", prof => {
-  if (prof.content.startsWith(PREFIX + "userinfo")) {
+  if (prof.content.startsWith(PREFIX + "user info")) {
     if (cooldown.has(prof.author.id)) {
       return prof.channel.send(`You have to wait 5 seconds`).then(m => {
         m.delete({ timeout: cdtime * 600 });
