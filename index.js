@@ -777,57 +777,6 @@ message.channel.send('Created  channel✅')
 }
 });
 
-client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "server info")) {
-    if (cooldown.has(message.author.id)) {
-      return message.channel.send(`You have to wait 5 seconds`).then(m => {
-        m.delete({ timeout: cdtime * 600 });
-      });
-    }
-    cooldown.add(message.author.id);
-    setTimeout(() => {
-      cooldown.delete(message.author.id);
-    }, cdtime * 1000);
-    var EMBED = new Discord.MessageEmbed()
-      .addField("Server Name", `${message.guild.name}`)
-      .addField("Server Id", `${message.guild.id}`)
-      .addField("Guild Owner", `${message.guild.owner}`)
-      .addField("Boosts", `${message.guild.premiumSubscriptionCount}`)
-      .addField("Channels", `${message.guild.channels.cache.size} Channels`)
-      .addField("Roles", `${message.guild.roles.cache.size} Roles`)
-      .addField("Members", `${message.guild.memberCount} Members`)
-      .setThumbnail(message.guild.iconURL())
-      .setColor(callicolor);
-    message.channel.send(EMBED);
-  }
-});
-
-client.on("message", prof => {
-  if (prof.content.startsWith(PREFIX + "user info")) {
-    if (cooldown.has(prof.author.id)) {
-      return prof.channel.send(`You have to wait 5 seconds`).then(m => {
-        m.delete({ timeout: cdtime * 600 });
-      });
-    }
-    cooldown.add(prof.author.id);
-    setTimeout(() => {
-      cooldown.delete(prof.author.id);
-    }, cdtime * 1000);
-    var professor = new Discord.MessageEmbed()
-      .setThumbnail(prof.member.user.displayAvatarURL({ dynamic: true }))
-      .setColor(callicolor)
-      .addField("Usernaem", `<@${prof.author.id}>`)
-      .addField("User Id", `${prof.author.id}`)
-      .addField(
-        "Joined Server At",
-        moment(prof.joinedAt).format("D/M/YYYY h:mm a"),
-        true
-      )
-      .addField("Create User", prof.author.createdAt.toLocaleString());
-    prof.channel.send(professor);
-  }
-});
-
 client.on('message',async message => {
   if(message.content.startsWith(PREFIX + "server icon")) { 
   let bla = new Discord.MessageEmbed()
