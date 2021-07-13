@@ -792,7 +792,7 @@ client.on('message',async message => {
 
 const db = require('quick.db');
 client.on("message", (msg) => {
-    if (msg.content.startsWith(prefix + 'set-lang')) {
+    if (msg.content.startsWith(PREFIX + 'set-lang')) {
         if (msg.author.bot) return;
         if (msg.channel.type == "dm") return;
         var args = msg.content.split(" ")
