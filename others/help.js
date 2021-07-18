@@ -18,7 +18,7 @@ module.exports = {
     .setThumbnail(` `)
     .setTitle(`**Panda Bot ✨**`)
     .setDescription(`
-<a:emoji_7:859099940499750912> **|** **User Commands**
+ **|** **User Commands**
 > \`invite\` - \`support\` - \`about\`
 > \`ping\` - \`prefix\` - \`uptime\`
 > \`tinvites\` - \`sug\` - \`roleuser\`
@@ -26,7 +26,7 @@ module.exports = {
 
 
 
-<a:music:852559405718175744> **|** **Music Commands**
+**|** **Music Commands**
 > \`play\` . \`skip\` . \`skipto\`
 > \`stop\` . \`volume\` . \`nowplaying\`
 > \`shuffle\` . \`search\` . \`resume\`
@@ -35,7 +35,7 @@ module.exports = {
 
 
 
-<a:Work:852558706708054056> **|** **Moderation Commands**
+**|** **Moderation Commands**
 > \`ban\` . \`unban\` . \`setnick\`
 > \`roleadd\` . \`roleremove\` . \`vkick\`
 > \`setprefix\` . \`clear\` . \`close\`
@@ -45,21 +45,21 @@ module.exports = {
 
 
 
-<:emoji_61:863458308219731978> **|** **Gif Commands**
+**|** **Gif Commands**
 > \`boy\` . \`girl\` . \`couple\`
 > \`sad\` . \`cartoon\` . \`anime\`
-> \`neon\`
+> \`neon\
 
 
 
 
-<a:emoji_20:856127714804105216> **|** **Game Commands**
+**|** **Game Commands**
 > \`kiss\` . \`slap\` . \`hug\`
 
 
 
 
-<a:dslink:859104935194656779> **|** **Links**
+**|** **Links**
 [Support](https://discord.gg/progresshome)
 [Invite](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot)
 `)
